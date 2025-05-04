@@ -5,13 +5,10 @@ Fuzzy C-Means Clustering
 
 Evaluasi:
 from sklearn.metrics import silhouette_score, davies_bouldin_score
-
-# Misalnya: data_input = data yang dipakai untuk clustering
-# labels = hasil np.argmax(u, axis=0)
-
+''Misalnya: data_input = data yang dipakai untuk clustering
+''labels = hasil np.argmax(u, axis=0)
 silhouette = silhouette_score(data.T, cluster_membership)
 davies = davies_bouldin_score(data.T, cluster_membership)
-
 print(f"Silhouette Score: {silhouette:.3f}")
 print(f"Davies-Bouldin Index: {davies:.3f}")
 
